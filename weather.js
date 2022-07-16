@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
                 const { description, icon } = data.weather[0];
                 const { sunrise, sunset } = data.sys;
 
-                const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+                const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
                 
                 // Converting Epoch (Unix) time to GMT
                 const sunriseGMT = new Date(sunrise * 1000);
@@ -57,7 +57,7 @@ window.addEventListener('load', () => {
                     for (rows = 1; rows <= 24; rows++) {
                         for (col = 1; col <= 4; col++) {
                             var icons = data.hourly[rows].weather[0].icon;
-                            var iconUrl = `http://openweathermap.org/img/wn/${icons}@2x.png`;
+                            var iconUrl = `https://openweathermap.org/img/wn/${icons}@2x.png`;
                             if (col === 1) { 
                                 var hourTime = (new Date(data.hourly[rows].dt * 1000)).getHours();
                                 var ampm = hourTime >= 12 ? 'pm' : 'am';
