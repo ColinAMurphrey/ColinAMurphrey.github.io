@@ -64,11 +64,23 @@ window.addEventListener('load', () => {
                                 hourTime = hourTime % 12;
                                 hourTime = hourTime ? hourTime : 12; // the hour '0' should be '12'
                                 document.getElementById(`time-${rows}`).innerHTML = `${hourTime}${ampm}`; 
-                            }                if (col === 2) { document.getElementById(`temp-${rows}`).innerHTML = `${(data.hourly[rows].temp).toFixed(0)}°F`; } 
+                            }
+                            if (col === 2) { document.getElementById(`temp-${rows}`).innerHTML = `${(data.hourly[rows].temp).toFixed(0)}°F`; } 
                             if (col === 3) { document.getElementById(`rain-${rows}`).innerHTML = `${Math.round(data.hourly[rows].pop * 100)}% `; } // + `<img src="${iconUrl}" class="shadow p-1 mb-1 bg-secondary rounded-circle" width="20%" height="20%">`; }
                             if (col === 4) { document.getElementById(`status-${rows}`).innerHTML = `<img src="${iconUrl}" class="shadow p-1 mb-1 bg-secondary rounded-circle" width="35%" height="auto">`}
                         }
+                        var hourTime_head = (new Date(data.hourly[rows].dt * 1000)).getHours();
+                        var ampm_head = hourTime_head >= 12 ? 'pm' : 'am';
+                        hourTime_head = hourTime_head % 12;
+                        hourTime_head = hourTime_head ? hourTime_head : 12; // the hour '0' should be '12'
+                        document.getElementById(`time-${rows}-accordion`).innerHTML = `${hourTime_head}${ampm_head}`;
+                        document.getElementById(`wind-speed-${rows}`).innerHTML = `Wind speed: ${data.hourly[rows].wind_speed} mph`;
+                        document.getElementById(`feels-like-${rows}`).innerHTML = `Feels like: ${data.hourly[rows].feels_like}&deg;F`;
+                        document.getElementById(`humidity-${rows}`).innerHTML = `Humidity: ${data.hourly[rows].humidity}%`;
                     }
+
+                    // var wind_speed = data.hourly[1].wind_speed;
+                    // document.getElementById('wind-speed-1').innerHTML = `Wind speed:    ${wind_speed}`;
                 }
             ) 
         })
