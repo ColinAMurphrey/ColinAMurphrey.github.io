@@ -1,4 +1,4 @@
-const api = "ea2df02bdddf92672edad514771f371e";
+const api = "ZWEyZGYwMmJkZGRmOTI2NzJlZGFkNTE0NzcxZjM3MWU";
 
 
 window.addEventListener('load', () => {
@@ -10,8 +10,8 @@ window.addEventListener('load', () => {
 
             let long = position.coords.longitude;
             let lat = position.coords.latitude;
-            const base = `https://pro.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=imperial`;
-            const hourlyUrl = `https://pro.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${api}&units=imperial`;
+            const base = `https://pro.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${atob(api)}&units=imperial`;
+            const hourlyUrl = `https://pro.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${atob(api)}&units=imperial`;
 
             // Main Weather
             fetch(base)
