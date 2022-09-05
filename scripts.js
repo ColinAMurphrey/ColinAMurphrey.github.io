@@ -1,5 +1,5 @@
 // Openweathermap API
-const api = '0332da943c5a2cd29b74fdc5744d2436';
+const api = 'ZWEyZGYwMmJkZGRmOTI2NzJlZGFkNTE0NzcxZjM3MWU';
 
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('.location');
@@ -67,8 +67,8 @@ const rain_12 = document.querySelector('#rain-12')
     // lat = position.coords.latitude;
     // const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=imperial`;
     // const hourly = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${api}&units=imperial`;
-    const base = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=imperial`;
-    const hourlyUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=29.7604&lon=-95.3698&appid=${api}&units=imperial`;
+    const base = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${atob(api)}&units=imperial`;
+    const hourlyUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=29.7604&lon=-95.3698&appid=${atob(api)}&units=imperial`;
     
     //Using fetch to get data
     fetch(base)
