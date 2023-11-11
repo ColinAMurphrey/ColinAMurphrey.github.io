@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Radar Detector Tutorial</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+		<style>
+
+		</style>
+	</head>
+	<body class="bg-dark text-light">
+		<div class="container">
+
+			<h1>Congratulations on your first Radar Detector!</h1>
+
+			<p>This guide will assist you to understand how to use it and particularly what each band means.</p>
+
+			<hr>
+
+			<h3>The Elephant in the Room</h3>
+			<p>
+				Radar detectors are designed to detect specific frequency bands used by law enforcement radar guns. A common misconception of radar detectors is that they detect all police cars on the road. This is far from true, as the radar/LIDAR guns used by police are only activated when the officer is actively looking for speeders. So, if you find that you pass a police officer and your radar detector does not alert you, it is likely that the officer is not actively searching for speeders (he/she does not have their radar/LIDAR gun turned on).
+			</p>
+
+			<p>
+				It should also be noted that yes, radar detectors are legal in most states (including Texas). At the time of writing this, Mississippi and Virginia are the only two states that have laws against radar detectors. Other than that, here are what each of the bands mean on your radar detector.
+			</p>
+
+
+			<h5>X Band</h5>
+			<p>
+				Created in the early 1950s, the X band operates within a frequency range of 8.0 to 12.0 GHz. While it was widely used in the past, it has become less prevalent in recent years. False alerts from other sources can occur, but law enforcement may still use X band radar guns in certain areas. However, the likelihood of this is rare.
+			</p>
+
+			<p>
+				Don't even worry about slowing down for this band. These radars have not been used for a long time. They are bulk radars that police officers do not carry anymore.
+			</p>
+
+
+			<h5>K Band</h5>
+			<p>
+				Developed in the 1970s, the K band operates within a frequency range of 18.0 to 27.0 GHz. It has been widely used for many years and is still utilized in some locations. However, it is also prone to false alerts from non-law enforcement radar sources.
+			</p>
+
+			<p>
+				Be cautious if the signal strength is low. Slow down if the signal strength is high. A big catch to this frequency range is that a lot of blind spot monitors (BSMs) on cars will alert this band. On my Uniden R3, I get a lot of 24.160 GHz alerts. When researching after getting this band very frequently, I have found that a lot of Hondas, Acuras, and apparently Jeeps utilize this frequency for their BSMs.
+			</p>
+
+
+			<h5>Ka Band</h5>
+			<p>
+				Introduced in the 1980s, the Ka band covers a wide frequency range, typically from 26.5 to 40.0 GHz. It offers higher radar performance and is used by law enforcement agencies in many regions. Some radar detectors provide specific Ka band segmentation to differentiate between different Ka frequencies, enhancing accuracy.
+			</p>
+
+			<p>
+				Absolutely slow down if you receiving this alert and you are speeding. Stick to the same speed as everybody else you're around.
+			</p>
+
+
+			<h5>Laser</h5>
+			<p>
+				Laser speed detection devices, also known as LIDAR, use pulses of light to measure vehicle speed. They operate on various infrared wavelengths and provide highly accurate readings. Laser detection on radar detectors alerts drivers to the presence of laser speed guns. Laser technology is widely used by law enforcement agencies and remains a prevalent method for speed enforcement.
+			</p>
+			<p>
+				You're basically screwed if you get this alert. You're already caught if you were speeding and you get this alert. While radar detectors advertise that they can pickup LIDAR, they don't do it very well. 
+			</p>
+
+
+			<h5>In summary</h5>
+			<ul>
+				<li>X Band: Don't even bother to slow down.</li>
+				<li>K Band: Be cautious, especially if the signal strength is high.</li>
+				<li>Ka Band: Slow down if you're speeding, as this is more than likely a police officer.</li>
+				<li>Laser: You're basically screwed.</li>
+			</ul>
+
+
+			<!-- <table class="table table-dark text-light table-bordered">
+				<thead>
+					<tr>
+						<th>Band</th>
+						<th>Description</th>
+						<th>Should I slow down if I'm speeding?</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr id="x-band">
+						<td>X Band</td>
+						<td>Created in the early 1950s, the X band operates within a frequency range of 8.0 to 12.0 GHz. While it was widely used in the past, it has become less prevalent in recent years. False alerts from other sources can occur, but law enforcement may still use X band radar guns in certain areas. However, the likelihood of this is rare.</td>
+						<td>
+							<p>Don't even worry about slowing down.</p>
+							<p>These radars have not been used for a long time. They are bulky radars that police officers do not carry anymore.</p>
+						</td>
+					</tr>
+
+					<tr id="k-band">
+						<td>K Band</td>
+						<td>Developed in the 1970s, the K band operates within a frequency range of 18.0 to 27.0 GHz. It has been widely used for many years and is still utilized in some locations. However, it is also prone to false alerts from non-law enforcement radar sources.</td>
+						<td>
+							<p>Be cautious if the signal strength is low. Slow down if the signal strength is high.</p>
+							<p>
+								A big catch to this frequency range is that a lot of blind spot monitors (BSMs) on cars will alert this band.
+							</p>
+							<p>
+								On my Uniden R3, I get a lot of 24.160 GHz alerts. When researching after getting this band very frequently, I have found that a lot of Hondas, Acuras, and apparently Jeeps utilize this frequency for their BSMs.
+							</p>
+						</td>
+					</tr>
+
+					<tr id="ka-band">
+						<td>Ka Band</td>
+						<td>
+							Introduced in the 1980s, the Ka band covers a wide frequency range, typically from 26.5 to 40.0 GHz. It offers higher radar performance and is used by law enforcement agencies in many regions. Some radar detectors provide specific Ka band segmentation to differentiate between different Ka frequencies, enhancing accuracy.
+						</td>
+						<td>
+							<p>
+								Absolutely slow down if you receiving this alert and you are speeding. Stick to the same speed as everybody else you're around.
+							</p>
+						</td>
+					</tr>
+
+					<tr id="laser">
+						<td>Laser</td>
+						<td>
+							Laser speed detection devices, also known as LIDAR, use pulses of light to measure vehicle speed. They operate on various infrared wavelengths and provide highly accurate readings. Laser detection on radar detectors alerts drivers to the presence of laser speed guns. Laser technology is widely used by law enforcement agencies and remains a prevalent method for speed enforcement.
+						</td>
+						<td>
+							<p>
+								You're basically screwed if you get this alert. You're already caught if you were speeding and you get this alert.
+							</p>
+
+							<p>
+								While radar detectors advertise that they can pickup LIDAR, they don't do it very well. 
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table> -->
+		</div>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
