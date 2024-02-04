@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Mine</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <style>
+        body {
+            background: black;
+            color: white;
+            margin-top: 25px;
+            margin-bottom: 100px;
+        }
+
+        div {
+            margin-bottom: 50px;
+        }
+
+        #dancing-cat {
+            width: 50px;
+            height: auto;
+        }
+
+        #state-why {
+            margin-top: 20px;
+        }
+
+        .question-img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>
+                Will you be my valentine?
+                <span>
+                    <img id="dancing-cat" src="../assets/cats/dancing_cat.gif">
+                </span>
+            </h1>
+            <hr>
+        </div>
+        
+        <div class="content">
+            <div id="question-1">
+                <h2>Do you love me?</h2>
+                <button class="btn btn-primary" onclick="showQuestion2()">Yes</button>
+                <button class="btn btn-danger" onclick="showStateWhy()">No</button>
+            </div>
+
+            <div id="question-2" style="display: none;">
+                <p>Happy happy haaappyyyy~</p>
+                <p>
+                    <img class="question-img" src="../assets/cats/happy.gif">
+                </p>
+
+                <h2>Will you love me forever?</h2>
+                <button class="btn btn-primary" onclick="showQuestion3()">Yes</button>
+                <button class="btn btn-danger" onclick="showSniff()">No</button>
+                <div id="huh" style="display: none;">
+                    <p><img src="../assets/cats/huh.gif"></p>
+                    <h4>huh? :0 no way</h4>
+                </div>
+            </div>
+
+            <div id="question-3" style="display: none">
+                <h2>Will you be my passenger princess in this car?</h2>
+                <p>
+                    <img class="question-img" src="../assets/cats/miat.jpg">
+                </p>
+                <button class="btn btn-primary" onclick="showQuestion4()">Yes</button>
+                <button class="btn btn-danger" onclick="showDrivingCat()">No</button>
+            </div>
+
+            <div id="question-4" style="display: none;">
+                <h2>Will you be my valentine?</h2>
+                <p>
+                    It appears that you fulfill my requirements to be my valentine. I am pleased to inform you that you have been selected to be my valentine. Should you choose to accept this offer, please proceed by texting me your response. If you do not respond within 24 hours, I will assume that you don't love me anymore and that you're cheating on me. Please respond promptly. Thank you.
+                </p>
+
+                <p>
+                    (I love you!)
+                </p>
+            </div>
+
+
+            <div id="state-why" style="display: none;">
+                <h4>Explain why you have chosen this answer.</h4>
+                    <img src="../assets/cats/tense.gif">
+
+                    <p>
+                        Kindly and earnestly, in a manner that reflects your utmost sincerity, intellectual rigor, and commitment to thoroughness, I humbly beseech you, with the utmost respect and in accordance with the principles of sound reasoning and logical coherence, to generously and comprehensively furnish, within the bounds of your intellectual capacity and the limitations of human language, a detailed, nuanced, and meticulously crafted reason that impeccably elucidates, justifies, and substantiates, beyond any shadow of doubt or ambiguity, the rationale behind your discerning and well-considered selection, thereby manifesting your profound cognitive acuity, discernment, and intellectual prowess.
+                    </p>
+                    <p>
+                        I implore you, with profound sincerity and an abiding commitment to intellectual integrity, to engage in an unwavering and conscientious examination of the subject matter at hand, encompassing the intricate interplay of multifarious factors, variables, and dimensions, while meticulously scrutinizing the wealth of empirical evidence, scholarly insights, and expert opinions that inform and underpin your thought process. By undertaking this arduous intellectual endeavor, marked by a tireless dedication to analytical rigor and the pursuit of truth, you shall be able to construct a cogent and compelling argument that meticulously weaves together the intricate threads of logic, reason, and evidence, culminating in a comprehensive and irrefutable rationale that serves as an intellectual testament to your astuteness, sagacity, and perspicacity.
+                    </p>
+                    <p>
+                        Furthermore, I implore you to draw upon the vast reservoirs of knowledge and wisdom that reside within the annals of human intellectual achievement, leveraging the insights gleaned from centuries of scholarly discourse, philosophical contemplation, and scientific inquiry. In doing so, you shall harness the collective wisdom of the ages, enriching your reasoning with a tapestry of diverse perspectives, philosophical frameworks, and epistemological paradigms, thus elevating your explanation to a transcendent level of erudition and profundity.
+                    </p>
+                    <p>
+                        Moreover, I encourage you to approach this task with an unwavering commitment to intellectual honesty, cultivating a profound self-awareness that allows you to recognize and acknowledge any personal biases, cognitive blind spots, or predispositions that may inadvertently influence your reasoning. By engaging in this introspective examination of your own thought processes, you shall unveil hidden layers of subconscious influences, ensuring that your reason transcends the limitations of personal subjectivity and embraces the universal pursuit of objective truth.
+                    </p>
+                    <p>
+                        Lastly, I implore you to consider the broader implications and ramifications of your selection, contemplating its potential impact on individuals, communities, and society at large. By reflecting upon the ethical dimensions, social consequences, and long-term implications of your choice, you shall demonstrate a profound commitment to responsible decision-making and exhibit the qualities of a conscientious and empathetic thinker, cognizant of the interconnectedness of our actions and the profound ripple effects they may engender.
+                    </p>
+                    <p>
+                        In conclusion, my earnest plea to you, delivered with the utmost sincerity and reverence, is to provide an extensive, elaborate, and all-encompassing reason that transcends the boundaries of brevity and embraces the boundless expanse of intellectual inquiry. By delving into the depths of your cognitive faculties, harnessing the vast repository of human knowledge, and engaging in a profound introspective examination, you shall construct a reason that reflects the pinnacle of intellectual acumen, analytical rigor, and perspicacious discernment. May your response stand as a testament to your unwavering commitment to the pursuit of truth, wisdom, and intellectual excellence.
+                    </p>
+
+                    <p>
+                        Please state your response using APA format, writing at least 10 pages, single-spaced, 12-point Times New Roman font, with 1-inch margins on all sides. Please include a minimum of 20 scholarly references, and ensure that your argument is supported by empirical evidence, logical reasoning, and sound methodology. Your response will be graded according to the rubric provided, and any deviation from the specified guidelines may result in a deduction of points. You have 24 hours to complete this task, and your response must be submitted via email.
+                    </p>
+            </div>
+                
+            <div id="sniff" style="display: none;">
+                <img src="../assets/cats/sniff.jpg">
+            </div>
+
+            <div id="driving-cat" style="display: none;">
+                <img src="../assets/cats/driving_cat.gif">
+                <p>
+                    me leaving you behind while I enjoy my drive
+                </p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="../scripts/bootstrap.min.js"></script>
+
+    <script>
+        
+
+        function showQuestion2() {
+            document.getElementById('question-2').style.display = 'block';
+            hideStateWhy();
+        }
+        function showStateWhy() {
+            document.getElementById('state-why').style.display = 'block';
+        }
+        function hideStateWhy() {
+            document.getElementById('state-why').style.display = 'none';
+        }
+
+        function showQuestion3() {
+            document.getElementById('question-3').style.display = 'block';
+            hideSniff();
+            showHuh();
+        }
+        function showHuh() {
+            document.getElementById('huh').style.display = 'block';
+        }
+        function showSniff() {
+            document.getElementById('sniff').style.display = 'block';
+        }
+        function hideSniff() {
+            document.getElementById('sniff').style.display = 'none';
+        }
+
+        function showQuestion4() {
+            document.getElementById('question-4').style.display = 'block';
+            hideDrivingCat();
+        }
+        function showDrivingCat() {
+            document.getElementById('driving-cat').style.display = 'block';
+        }
+        function hideDrivingCat() {
+            document.getElementById('driving-cat').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
