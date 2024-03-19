@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Difference Calculator</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+
+    <style>
+        form {
+            margin-bottom: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Future Time Difference Calculator</h1>
+        <p class="lead">
+            This tool allows you to calculate the time difference between the current time and a future time.
+        </p>
+
+        <hr>
+
+        <form id="time-from">
+            <input type="text" id="day" placeholder="Day">
+            <input type="text" id="hour" placeholder="Hour">
+            <input type="text" id="minute" placeholder="Minute">
+            <input type="text" id="second" placeholder="Second">
+        </form>
+
+        <button type="button" class="btn btn-primary" onclick="getTheTime()">Get time</button>
+
+        <p id="the-time"></p>
+    </div>
+
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script>
+        const start = Date.now();
+        // console.log(start);
+
+        function getTheTime() {
+
+
+            const days = document.getElementById('day').value;
+            const hours = document.getElementById('hour').value;
+            const minutes = document.getElementById('minute').value;
+            const seconds = document.getElementById('second').value;
+            const totalMilliseconds = (days * 86400000) + (hours * 3600000) + (minutes * 60000) + (seconds * 1000);
+
+            const currentDate = new Date();
+            const futureTimestamp = currentDate.getTime() + totalMilliseconds;
+            const futureDate = new Date(futureTimestamp);
+
+            const options = {
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                hour12: true
+            };
+
+            const formattedFutureDate = futureDate.toLocaleString(undefined, options);
+            document.getElementById('the-time').innerHTML = `Future Date: ${formattedFutureDate}`;
+            // document.getElementById('the-time').innerHTML = `Future Date: ${futureDate}`; // `Total milliseconds: ${totalMilliseconds}`;
+
+        }
+
+            // const allTime = `${days}:${hours}:${minutes}:${seconds}`;
+            // const allTime = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            // console.log(allTime);
+            // console.log(Date.parse(allTime));
+
+        // function getTheTime() {
+        //     const end = Date.now();
+        //     console.log(end);
+        //     console.log(end - start);
+        //     document.getElementById('the-time').innerHTML = end - start;
+        // }
+        
+    </script>
+</body>
+</html>
