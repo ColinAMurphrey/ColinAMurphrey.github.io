@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Difference Calculator</title>
-    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../../styles/bootstrap.min.css">
 
     <style>
         form {
@@ -17,6 +17,14 @@
     </style>
 </head>
 <body>
+    <header>
+        <!-- navbar -->
+        <nav class="nav">
+            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link" href="/tools.html">Tools</a>
+        </nav>
+    </header>
+
     <div class="container">
 
         <h1>Future Time Difference Calculator</h1>
@@ -35,10 +43,11 @@
 
         <button type="button" class="btn btn-primary" onclick="getTheTime()">Get time</button>
 
+        <p id="current-time"></p>
         <p id="the-time"></p>
     </div>
 
-    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../../scripts/bootstrap.min.js"></script>
     <script>
         const start = Date.now();
         // console.log(start);
@@ -64,6 +73,7 @@
             };
 
             const formattedFutureDate = futureDate.toLocaleString(undefined, options);
+            document.getElementById('current-time').innerHTML = `Current Time: ${currentDate.toLocaleString(undefined, options)}`;
             document.getElementById('the-time').innerHTML = `Future Date: ${formattedFutureDate}`;
             // document.getElementById('the-time').innerHTML = `Future Date: ${futureDate}`; // `Total milliseconds: ${totalMilliseconds}`;
 
