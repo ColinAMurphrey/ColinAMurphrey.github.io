@@ -13,9 +13,11 @@
     transform: translate(-50%, -50%);
 }
 
-.ms-auto {
-    margin-right: 50px;
-    margin-top: 10px;
+.ms-auto-checkbox {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: auto;
 }
 
 .test {
@@ -45,10 +47,15 @@ nav a {
     color: #000;
 }
 
+.col-md-6 {
+    margin: auto;
+}
+
 .card-link {
     color: black;
     text-decoration: none;
 }
+
 
 .align-mid {
     display: flex;
@@ -69,12 +76,7 @@ nav a {
     }
 }
 
-
-
-/* .mx-auto {
-    margin-right: auto !important;
-    margin-left: auto !important;
-} */
-
-/* .w-50 { width: 50% !important; } */
-
+header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

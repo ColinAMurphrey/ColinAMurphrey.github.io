@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>About Me</title>
+    <meta property="og:title" content="About Me">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,45 +22,46 @@
 
 <body>
     <div class="container width-50 mx-auto">
-        <!-- navbar -->
-        <nav class="nav">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="tools.html">Tools</a>
 
-            <div class="ms-auto">
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <label for="checkbox" class="checkbox-label">
-                    <i class="bi bi-moon-stars-fill"></i>
-                    <i class="bi bi-sun-fill"></i>
-                    <span class="ball"></span>
-                </label>
+        <header>
+            <!-- navbar -->
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="tools.html">Tools</a>
+
+                <div class="ms-auto-checkbox">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun-fill"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </nav>
+        </header>
+        
+
+        <main>
+            <div class="mx-auto" style="width: 200px;">
+                <h1>About me</h1>
             </div>
-        </nav>
-
-        <div class="mx-auto" style="width: 200px;">
-            <h1>About me</h1>
-        </div>
-
-        
-
-        <section>
-
-            <hr>
-            <h2>Background</h2>
-
-            <p>
-                I am a graduate from the University of St. Thomas in Houston. I have graduated with an Associates of Applied Science in Cybersecurity. My interests consist of web development, hardware and software technology, and program development. I also have somewhat of an interest in artificial intelligence image generation and machine learning using Stable Diffusion.
-            </p>
-            <p>
-                Despite having graduated with an Associates of Applied Science in Cybersecurity, I am keen to learn more about AI, how it can be implemented, and how it can be taken advantage of. In my opinion, AI is only getting stronger since its initial development, which can make it a more dangerous tool later in the future. This is why I am interested in learning more about AI. Someday, AI may possibly be used in cybersecurity for threat detection, automaded incident responses, and more, which is why I have such an interest in artificial intelligence.
-            </p>
-        </section>
-
-        <section>
-            <!-- <h2>What I Do</h2> -->
-        </section>
-        
-        
+    
+            <section>
+                <hr>
+                <h2>Background</h2>
+                <p>
+                    I am a graduate from the University of St. Thomas in Houston. I have graduated with an Associates of Applied Science in Cybersecurity. My interests consist of web development, hardware and software technology, and program development. I also have somewhat of an interest in artificial intelligence image generation and machine learning using Stable Diffusion.
+                </p>
+                
+                <p>
+                    Despite having graduated with an Associates of Applied Science in Cybersecurity, I am keen to learn more about AI, how it can be implemented, and how it can be taken advantage of. In my opinion, AI is only getting stronger since its initial development, which can make it a more dangerous tool later in the future. This is why I am interested in learning more about AI. Someday, AI may possibly be used in cybersecurity for threat detection, automaded incident responses, and more, which is why I have such an interest in artificial intelligence.
+                </p>
+            </section>
+    
+            <section>
+                <!-- <h2>What I Do</h2> -->
+            </section>
+        </main>
     </div>
 
     <script src="./scripts/bootstrap.min.js"></script>

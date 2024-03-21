@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta property="og:title" content="Time Difference Calculator" />
+    <meta property="og:image" content="/assets/tools/time-difference-calculator.png" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Difference Calculator</title>
@@ -24,7 +27,7 @@
                 <a class="nav-link" href="/index.html">Home</a>
                 <a class="nav-link" href="/tools.html">Tools</a>
     
-                <div class="ms-auto">
+                <div class="ms-auto-checkbox">
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="checkbox-label">
                         <i class="bi bi-moon-stars-fill"></i>
@@ -35,24 +38,26 @@
             </nav>
         </header>
 
-        <h1>Future Time Difference Calculator</h1>
-        <p class="lead">
-            This tool allows you to calculate the time difference between the current time and a future time.
-        </p>
+        <main>
+            <h1>Future Time Difference Calculator</h1>
+            <p class="lead">
+                This tool allows you to calculate the time difference between the current time and a future time.
+            </p>
 
-        <hr>
+            <hr>
 
-        <form id="time-from">
-            <input class="form-control" type="text" id="day" placeholder="Day">
-            <input class="form-control" type="text" id="hour" placeholder="Hour">
-            <input class="form-control" type="text" id="minute" placeholder="Minute">
-            <input class="form-control" type="text" id="second" placeholder="Second">
-        </form>
+            <form id="time-from">
+                <input class="form-control" type="text" id="day" placeholder="Day">
+                <input class="form-control" type="text" id="hour" placeholder="Hour">
+                <input class="form-control" type="text" id="minute" placeholder="Minute">
+                <input class="form-control" type="text" id="second" placeholder="Second">
+            </form>
 
-        <button type="button" class="btn btn-primary" onclick="getTheTime()">Get time</button>
+            <button type="button" class="btn btn-primary" onclick="getTheTime()">Get time</button>
 
-        <p id="current-time"></p>
-        <p id="the-time"></p>
+            <p id="current-time"></p>
+            <p id="the-time"></p>
+        </main>
     </div>
 
     <script src="../../scripts/bootstrap.min.js"></script>
@@ -83,26 +88,11 @@
             const formattedFutureDate = futureDate.toLocaleString(undefined, options);
             document.getElementById('current-time').innerHTML = `Current Time: ${currentDate.toLocaleString(undefined, options)}`;
             document.getElementById('the-time').innerHTML = `Future Date: ${formattedFutureDate}`;
-            // document.getElementById('the-time').innerHTML = `Future Date: ${futureDate}`; // `Total milliseconds: ${totalMilliseconds}`;
-
         }
-
-            // const allTime = `${days}:${hours}:${minutes}:${seconds}`;
-            // const allTime = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-            // console.log(allTime);
-            // console.log(Date.parse(allTime));
-
-        // function getTheTime() {
-        //     const end = Date.now();
-        //     console.log(end);
-        //     console.log(end - start);
-        //     document.getElementById('the-time').innerHTML = end - start;
-        // }
-        
     </script>
 
-    <script src="../../scripts/bootstrap.min.js"></script>
-    <script src="../../scripts/global.js"></script>
-    <script src="../../scripts/theme-toggle.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/theme-toggle.js"></script>
 </body>
 </html>

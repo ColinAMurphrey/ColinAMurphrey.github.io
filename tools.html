@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta property="og:title" content="Colin's Tools">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin's Tools</title>
 
-    <link rel="stylesheet" href="./styles/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/theme-toggle.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/theme-toggle.css">
 
     <script src="/scripts/eye-saver.js"></script>
 
@@ -18,14 +20,13 @@
 </head>
 <body>
     <div class="container">
-        <head>
-
+        <header>
             <!-- navbar -->
             <nav class="nav">
                 <a class="nav-link" href="/index.html">Home</a>
                 <a class="nav-link" href="/tools.html">Tools</a>
 
-                <div class="ms-auto">
+                <div class="ms-auto-checkbox">
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="checkbox-label">
                         <i class="bi bi-moon-stars-fill"></i>
@@ -34,13 +35,12 @@
                     </label>
                 </div>
             </nav>
-
-            <h1>Colin's Tools</h1>
-        </head>
+        </header>
 
         <main>
+            <h1>Colin's Tools</h1>
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <a class="card-link" href="./tools/qr-code-generator/qr-code-generator.html">
                         <div class="card card-body">
                             <h3>QR Code Generator</h3>
@@ -59,7 +59,7 @@
                     </a>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6">
                     <a class="card-link" href="./tools/alt-caser/alt-caser.html">
                         <div class="card card-body">
                             <h3>Alt Caser</h3>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <a class="card-link" href="./tools/time-difference-calculator/time-difference-calculator.html">
                         <div class="card card-body">
                             <h3>Time Difference Calculator</h3>
@@ -98,8 +98,8 @@
         </main>
     </div>
 
-    <script src="./scripts/bootstrap.min.js"></script>
-    <script src="./scripts/global.js"></script>
-    <script src="./scripts/theme-toggle.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/theme-toggle.js"></script>
 </body>
 </html>

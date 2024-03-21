@@ -2,11 +2,6 @@
 
 * { box-sizing: border-box; }
 
-/* body {
-    background-color: #fff;
-    transition: background 0.2s linear;
-} */
-
 body.dark { background-color: #292c35; }  /* #9b59b6 */
 
 body.dark nav,
@@ -23,8 +18,6 @@ body.dark input::placeholder,
 body.dark nav a,
 body.dark .card,
 body.dark .form { color: white !important; }
-
-/* body.dark h1, body.dark .support a, body.dark { color: #fff !important } */
 
 .checkbox {
     opacity: 0;
@@ -45,8 +38,6 @@ body.dark .form { color: white !important; }
 }
 
 .bi { color: white !important; }
-/* .bi-moon-stars-fill { color: white !important; }
-.bi-sun-fill { color: white !important;} */
 
 .checkbox-label .ball {
     background-color: #fff;
