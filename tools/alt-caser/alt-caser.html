@@ -6,7 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/theme-toggle.css">
+
+    <script src="/scripts/eye-saver.js"></script>
 
     <style>
         #inputText {
@@ -21,15 +26,24 @@
     </style>
 </head>
 <body>
-    <header>
-        <!-- navbar -->
-        <nav class="nav">
-            <a class="nav-link" href="/index.html">Home</a>
-            <a class="nav-link" href="/tools.html">Tools</a>
-        </nav>
-    </header>
-
     <div class="container">
+        <header>
+            <!-- navbar -->
+            <nav class="nav">
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/tools.html">Tools</a>
+    
+                <div class="ms-auto">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun-fill"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </nav>
+        </header>
+
         <h1>Alt Caser</h1>
         <hr>
 
@@ -60,7 +74,10 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <script src="../../scripts/global.js"></script>
+    <script src="../../scripts/theme-toggle.js"></script>
     
     
 </body>

@@ -1,8 +1,34 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.center-it {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sub-footer {
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ms-auto {
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
 .test {
     color: red;
 }
 
-nav { text-align: center; }
+nav {
+    text-align: center;
+    border: white solid 1px;
+    background-color: white;
+    border-radius: 50px;
+    /* min-width: 100vw; */
+}
 
 nav ul {
     list-style: none;
