@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/theme-toggle.css">
+
+    <script src="/scripts/eye-saver.js"></script>
+
+    <style>
+        form div {
+            text-align: center;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- navbar -->
+            <nav class="nav">
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/tools.html">Tools</a>
+    
+                <div class="ms-auto-checkbox">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun-fill"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label" for="hour">Hours</label>
+                    <input class="form-control" type="number" step="1" id="hour" min="0" max="24" />
+                </div>
+        
+                <div class="mb-3">
+                    <label class="form-label" for="minute">Minutes</label>
+                    <input class="form-control" type="number" step="1" id="minute" min="0" max="60" />
+                </div>
+        
+                <div class="mb-3">
+                    <label class="form-label" for="second">Seconds</label>
+                    <input class="form-control" type="number" step="1" id="second" min="0" max="60" />
+                </div>
+
+                <button type="submit" class="btn btn-primary" onclick="doIt()">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <script>
+        function getMilliseconds() {
+            let hour = document.getElementById('hour').value;
+            let minute = document.getElementById('minute').value;
+            let second = document.getElementById('second').value;
+            let totalSeconds = (hour * 3600) + (minute * 60) + second;
+            let milliseconds = parseInt(totalSeconds) * 1000;
+            milliseconds = Number(milliseconds);
+
+            console.log('Total seconds: ' + typeof Number(totalSeconds));
+            console.log('Milliseconds: ' + milliseconds);
+            
+            return milliseconds;
+            // setTimeout(runTimer, milliseconds);
+        }
+
+        function doIt() {
+            var allmilli = getMilliseconds();
+            // console.log(allmilli);
+            // setTimeout(startTimer(), allmilli);
+            setTimeout(function() {
+                // startTimer();
+                alert("Time is up!");
+            }, allmilli);
+        }
+
+        function startTimer() {
+            alert("Time is up!");
+        }
+
+
+
+
+        function runTimer() {
+            alert('Time is up!');
+        }
+    </script>
+
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/theme-toggle.js"></script>
+</body>
+</html>
