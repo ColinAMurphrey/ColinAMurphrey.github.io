@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Engine</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/theme-toggle.css">
+
+    <script src="/scripts/eye-saver.js"></script>
+
+
+
+    <style>
+        form {
+            width: 300px;
+            height: 44px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        ::placeholder {
+            opacity: 0.7 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- navbar -->
+            <nav class="nav">
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/tools.html">Tools</a>
+    
+                <div class="ms-auto-checkbox">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun-fill"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- <div class="row g-3 align-items-center">
+                <form class="mx-auto p-5" id="google" style="width: 80%;">
+                    <input class="form-control" type="search" id="query" name="q" placeholder="Search...">
+                    <button class="btn btn-primary bi bi-search"></button>
+                </form>
+            </div> -->
+
+            <hr>
+            <h1>Reddit Engine</h1>
+
+            <div class="row g-3 align-items-center">
+                <form class="mx-auto p-5" role="search" id="form">
+                    <input class="form-control" type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                    <button class="btn btn-primary bi bi-search">
+                        <!-- <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg> -->
+                    </button>
+                </form>
+            </div>
+
+            <h2>What's the point of this?</h2>
+            <p>
+                Reddit Engine is designed as a joke. Given that there are many Reddit users, and probably more subreddits than there are currently active Redditors, there is more than likely a solution to your issue that is on Reddit that no many other forums and threads have.
+            </p>
+        </main>
+    </div>
+
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/theme-toggle.js"></script>
+
+
+    <script>
+        const f = document.getElementById('form');
+        const q = document.getElementById('query');
+        const google = 'https://www.google.com/search?q=site%3A+';
+        const site = 'reddit.com';
+
+        function submitted(event) {
+            event.preventDefault();
+            const url = google + site + '+' + q.value;
+            const win = window.open(url, '_blank');
+            win.focus();
+        }
+
+        f.addEventListener('submit', submitted);
+    </script>
+</body>
+</html>
