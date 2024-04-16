@@ -7,15 +7,17 @@ body.dark { background-color: #292c35; }  /* #9b59b6 */
 body.dark nav,
 body.dark nav,
 body.dark input,
+body.dark table, body.dark table tr, body.dark table td,
 body.dark .card,
 body.dark .form,
-body.dark .form-control { background-color: #555; }
+body.dark .form-control { background-color: #555 !important; }
 
 body.dark,
-body.dark .nav-link,
+body.dark table, body.dark table tr, body.dark table td,
 body.dark input,
 body.dark input::placeholder,
 body.dark nav a,
+body.dark .nav-link,
 body.dark .card,
 body.dark .form { color: white !important; }
 
