@@ -3,22 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Van's Website">
+    <meta property="og:image" content="./assets/300x300.jpg">
+
     <title>Van</title>
 
-    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <div>
-
+        <header>
             <!-- navbar -->
-            <nav class="nav">
-                <a class="nav-link" href="thanh-index.html">Home</a>
-                <a class="nav-link" href="/tools.html">Tools</a>
+            <!-- <nav class="nav">
+                <a class="nav-link" href="./van-index.html">Home</a>
+                <a class="nav-link" href="./book-reviews.html">Book reviews</a>
+            </nav> -->
+
+            <!-- Don't worry about too much of this stuff below -->
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Your Name Here</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Extra Stuff</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <!-- Add a new link here. The comment below is a template of what to add for a new URL. You'll have to copy this into the other pages as well -->
+                                <!--
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./file/path/to/webpage.html">Name of webpage here (this will be displayed on the website itself)</a>
+                                    </li>
+                                -->
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./van-index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./book-reviews.html">Book Reviews</a>
+                                </li>
+
+                                <!-- Arrange the <li></li> elements how you would like -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
-        </div> 
+
+            <!-- Don't worry about too much of the stuff above -->
+        </header>
     </div>
 
-    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
 </body>
 </html>
