@@ -29,17 +29,53 @@
 
             <hr>
 
-            <ul>
-                <li><button class="btn btn-primary" id="colinshouse" onclick="colinshouse()">Colin's house: -1642 66 2826</button></li>
-                <li><button class="btn btn-primary" id="cherryhills" onclick="cherryhills()">Cherry Hills: -2157 106 3228</button></li>
-                <li><button class="btn btn-primary" id="snowbiome" onclick="snowbiome()">Snow Biome: -2356 143 4221</button></li>                
-                <li><button class="btn btn-primary" id="jungle" onclick="jungle()">Jungle: -10480 72 6643</button></li>
-            </ul>
+            <section>
+                <h2>Overworld</h2>
+                
+                <ul>
+                    <li><button class="btn btn-primary" id="colinshouse" onclick="colinshouse()">Colin's house: -1642 66 2826</button></li>
+                    <li><button class="btn btn-primary" id="cherryhills" onclick="cherryhills()">Cherry Hills: -2157 106 3228</button></li>
+                    <li><button class="btn btn-primary" id="snowbiome" onclick="snowbiome()">Snow Biome: -2356 143 4221</button></li>                
+                    <li><button class="btn btn-primary" id="jungle" onclick="jungle()">Jungle: -10480 72 6643</button></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Nether</h2>
+
+                <ul>
+                    <li><button class="btn btn-primary" id="homebase" onclick="homebase()">Home base: -212 118 370</button></li>
+                    <li><button class="btn btn-primary" id="cherryhills" onclick="cherryhills()">Cherry Hills: -272 118 408</button></li>
+                    <li><button class="btn btn-primary" kd="oggayasscave" onclick="oggayasscave()">OG gay ass cave: -820 118 407</button></li>
+                    <li><button class="btn btn-primary" id="gayasscave" onclick="gayasscave()">gay ass cave: -810 118 797</button></li>
+                    <li><button class="btn btn-primary" id="gayasscave2" onclick="gayasscave2()">gay ass cave 2: -1383 117 802</button></li>
+                    <li><button class="btn btn-primary" id="iceplace" onclick="iceplace()">ice place: -1467 117 728</button></li>
+                    <li><button class="btn btn-primary" id="jungle" onclick="jungle()">Jungle: -1312 118 828</button></li>
+                </ul>
+            </section>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
+            function homebase() {
+                let name = "homebase";
+                let text = "/tp -212 118 370";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function cherryhills() {
+                let name = "cherryhills";
+                let text= "/tp -272 118 408";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+
+
             function colinshouse() {
                 let text = "/tp -1642 66 2826";
                 let ogText = document.getElementById("colinshouse").innerHTML;
