@@ -4,11 +4,11 @@ Home base: -212 118 370
 
 Cherry Hills: -272 118 408
 
-OG gay ass cave: -820 118 407
+OG cave: -820 118 407
 
-gay ass cave: -810 118 797
+cave: -810 118 797
 
-gay ass cave 2: -1383 117 802
+cave 2: -1383 117 802
 
 ice place: -1467 117 728
 

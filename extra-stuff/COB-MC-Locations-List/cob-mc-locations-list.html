@@ -29,46 +29,90 @@
 
             <hr>
 
-            <section>
-                <h2>Overworld</h2>
-                
-                <ul>
-                    <li><button class="btn btn-primary" id="colinshouse" onclick="colinshouse()">Colin's house: -1642 66 2826</button></li>
-                    <li><button class="btn btn-primary" id="cherryhills" onclick="cherryhills()">Cherry Hills: -2157 106 3228</button></li>
-                    <li><button class="btn btn-primary" id="snowbiome" onclick="snowbiome()">Snow Biome: -2356 143 4221</button></li>                
-                    <li><button class="btn btn-primary" id="jungle" onclick="jungle()">Jungle: -10480 72 6643</button></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Nether</h2>
-
-                <ul>
-                    <li><button class="btn btn-primary" id="homebase" onclick="homebase()">Home base: -212 118 370</button></li>
-                    <li><button class="btn btn-primary" id="cherryhills" onclick="cherryhills()">Cherry Hills: -272 118 408</button></li>
-                    <li><button class="btn btn-primary" kd="oggayasscave" onclick="oggayasscave()">OG gay ass cave: -820 118 407</button></li>
-                    <li><button class="btn btn-primary" id="gayasscave" onclick="gayasscave()">gay ass cave: -810 118 797</button></li>
-                    <li><button class="btn btn-primary" id="gayasscave2" onclick="gayasscave2()">gay ass cave 2: -1383 117 802</button></li>
-                    <li><button class="btn btn-primary" id="iceplace" onclick="iceplace()">ice place: -1467 117 728</button></li>
-                    <li><button class="btn btn-primary" id="jungle" onclick="jungle()">Jungle: -1312 118 828</button></li>
-                </ul>
-            </section>
+            <div class="row">
+                <section class="col-md-6">
+                    <h2>Overworld</h2>
+                    
+                    <ul>
+                        <li><button class="btn btn-primary" id="colinshouse_overworld" onclick="colinshouse_overworld()">Colin's house: -1642 66 2826</button></li>
+                        <li><button class="btn btn-primary" id="cherryhills_overworld" onclick="cherryhills_overworld()">Cherry Hills: -2157 106 3228</button></li>
+                        <li><button class="btn btn-primary" id="snowbiome_overworld" onclick="snowbiome_overworld()">Snow Biome: -2356 143 4221</button></li>                
+                        <li><button class="btn btn-primary" id="jungle_overworld" onclick="jungle_overworld()">Jungle: -10480 72 6643</button></li>
+                    </ul>
+                </section>
+    
+                <section class="col-md-6">
+                    <h2>Nether</h2>
+    
+                    <ul>
+                        <li><button class="btn btn-primary" id="homebase_nether" onclick="homebase_nether()">Home base: -212 118 370</button></li>
+                        <li><button class="btn btn-primary" id="cherryhills_nether" onclick="cherryhills_nether()">Cherry Hills: -272 118 408</button></li>
+                        <li><button class="btn btn-primary" id="ogcave_nether" onclick="ogcave_nether()">OG cave: -820 118 407</button></li>
+                        <li><button class="btn btn-primary" id="cave_nether" onclick="cave_nether()">cave: -810 118 797</button></li>
+                        <li><button class="btn btn-primary" id="cave2_nether" onclick="cave2_nether()">cave 2: -1383 117 802</button></li>
+                        <li><button class="btn btn-primary" id="iceplace_nether" onclick="iceplace_nether()">ice place: -1467 117 728</button></li>
+                        <li><button class="btn btn-primary" id="jungle_nether" onclick="jungle_nether()">Jungle: -1312 118 828</button></li>
+                    </ul>
+                </section>
+            </div>
+            
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
-            function homebase() {
-                let name = "homebase";
+            // Nether locations
+            function homebase_nether() {
+                let name = "homebase_nether";
                 let text = "/tp -212 118 370";
                 let ogText = document.getElementById(name).innerHTML;
                 navigator.clipboard.writeText(text)
                 textIsCopied(name, ogText);
             }
 
-            function cherryhills() {
-                let name = "cherryhills";
+            function cherryhills_nether() {
+                let name = "cherryhills_nether";
                 let text= "/tp -272 118 408";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function ogcave_nether() {
+                let name = "ogcave_nether";
+                let text = "/tp -820 118 407";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function cave_nether() {
+                let name = "cave_nether";
+                let text = "/tp -810 118 797";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function cave2_nether() {
+                let name = "cave2_nether";
+                let text = "/tp -1383 117 802";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function iceplace_nether() {
+                let name = "iceplace_nether";
+                let text = "/tp -1467 117 728";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function jungle_nether() {
+                let name = "jungle_nether";
+                let text = "/tp -1312 118 828";
                 let ogText = document.getElementById(name).innerHTML;
                 navigator.clipboard.writeText(text)
                 textIsCopied(name, ogText);
@@ -76,32 +120,37 @@
 
 
 
-            function colinshouse() {
+            // Overworld locations
+            function colinshouse_overworld() {
                 let text = "/tp -1642 66 2826";
-                let ogText = document.getElementById("colinshouse").innerHTML;
+                let name = "colinshouse_overworld"
+                let ogText = document.getElementById(name).innerHTML;
                 navigator.clipboard.writeText(text)
-                textIsCopied("colinshouse", ogText);
+                textIsCopied(name, ogText);
             }
 
-            function cherryhills() {
+            function cherryhills_overworld() {
                 let text = "/tp -2157 106 3228";
-                let ogText = document.getElementById("cherryhills").innerHTML;
+                let name = "cherryhills_overworld";
+                let ogText = document.getElementById(name).innerHTML;
                 navigator.clipboard.writeText(text)
-                textIsCopied("cherryhills", ogText);
+                textIsCopied(name, ogText);
             }
 
-            function snowbiome() {
+            function snowbiome_overworld() {
                 let text = "/tp -2356 143 4221";
-                let ogText = document.getElementById("snowbiome").innerHTML;
+                let name = "snowbiome_overworld";
+                let ogText = document.getElementById(name).innerHTML;
                 navigator.clipboard.writeText(text)
-                textIsCopied("snowbiome", ogText);
+                textIsCopied(name, ogText);
             }
 
-            function jungle() {
+            function jungle_overworld() {
                 let text = "/tp -10480 72 6643";
-                let ogText = document.getElementById("jungle").innerHTML;
+                let name = "jungle_overworld";
+                let ogText = document.getElementById(name).innerHTML;
                 navigator.clipboard.writeText(text)
-                textIsCopied("jungle", ogText);
+                textIsCopied(name, ogText);
             }
 
 
