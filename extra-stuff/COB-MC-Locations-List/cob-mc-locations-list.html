@@ -34,7 +34,8 @@
                     <h2>Overworld</h2>
                     
                     <ul>
-                        <li><button class="btn btn-primary" id="colinshouse_overworld" onclick="colinshouse_overworld()">Colin's house: -1642 66 2826</button></li>
+                        <li><button class="btn btn-primary" id="homebase_overworld" onclick="homebase_overworld()">Home Base: -1675 64 2862</button></li>
+                        <!-- <li><button class="btn btn-primary" id="colinshouse_overworld" onclick="colinshouse_overworld()">Colin's house: -1642 66 2826</button></li> -->
                         <li><button class="btn btn-primary" id="cherryhills_overworld" onclick="cherryhills_overworld()">Cherry Hills: -2157 106 3228</button></li>
                         <li><button class="btn btn-primary" id="snowbiome_overworld" onclick="snowbiome_overworld()">Snow Biome: -2356 143 4221</button></li>                
                         <li><button class="btn btn-primary" id="jungle_overworld" onclick="jungle_overworld()">Jungle: -10480 72 6643</button></li>
@@ -61,6 +62,50 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
+            // Overworld locations
+            function homebase_overworld() {
+                let text = "/tp -1675 64 2862";
+                let name = "homebase_overworld";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function colinshouse_overworld() {
+                let text = "/tp -1642 66 2826";
+                let name = "colinshouse_overworld"
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function cherryhills_overworld() {
+                let text = "/tp -2157 106 3228";
+                let name = "cherryhills_overworld";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function snowbiome_overworld() {
+                let text = "/tp -2356 143 4221";
+                let name = "snowbiome_overworld";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+            function jungle_overworld() {
+                let text = "/tp -10480 72 6643";
+                let name = "jungle_overworld";
+                let ogText = document.getElementById(name).innerHTML;
+                navigator.clipboard.writeText(text)
+                textIsCopied(name, ogText);
+            }
+
+
+
+
             // Nether locations
             function homebase_nether() {
                 let name = "homebase_nether";
@@ -117,44 +162,6 @@
                 navigator.clipboard.writeText(text)
                 textIsCopied(name, ogText);
             }
-
-
-
-            // Overworld locations
-            function colinshouse_overworld() {
-                let text = "/tp -1642 66 2826";
-                let name = "colinshouse_overworld"
-                let ogText = document.getElementById(name).innerHTML;
-                navigator.clipboard.writeText(text)
-                textIsCopied(name, ogText);
-            }
-
-            function cherryhills_overworld() {
-                let text = "/tp -2157 106 3228";
-                let name = "cherryhills_overworld";
-                let ogText = document.getElementById(name).innerHTML;
-                navigator.clipboard.writeText(text)
-                textIsCopied(name, ogText);
-            }
-
-            function snowbiome_overworld() {
-                let text = "/tp -2356 143 4221";
-                let name = "snowbiome_overworld";
-                let ogText = document.getElementById(name).innerHTML;
-                navigator.clipboard.writeText(text)
-                textIsCopied(name, ogText);
-            }
-
-            function jungle_overworld() {
-                let text = "/tp -10480 72 6643";
-                let name = "jungle_overworld";
-                let ogText = document.getElementById(name).innerHTML;
-                navigator.clipboard.writeText(text)
-                textIsCopied(name, ogText);
-            }
-
-
-
 
 
             function textIsCopied(htmlID, ogText) {
