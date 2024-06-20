@@ -97,15 +97,15 @@
 .text-magenta-l9 { color: rgb(255, 0, 255); }
 
 /* magenta backgrounds */
-.bg-magenta-l1 { color: rgb(0, 0, 0); }
-.bg-magenta-l2 { color: rgb(32, 0, 32); }
-.bg-magenta-l3 { color: rgb(64, 0, 64); }
-.bg-magenta-l4 { color: rgb(96, 0, 96); }
-.bg-magenta-l5 { color: rgb(128, 0, 128); }
-.bg-magenta-l6 { color: rgb(160, 0, 160); }
-.bg-magenta-l7 { color: rgb(192, 0, 192); }
-.bg-magenta-l8 { color: rgb(224, 0, 224); }
-.bg-magenta-l9 { color: rgb(255, 0, 255); }
+.bg-magenta-l1 { background-color: rgb(0, 0, 0); }
+.bg-magenta-l2 { background-color: rgb(32, 0, 32); }
+.bg-magenta-l3 { background-color: rgb(64, 0, 64); }
+.bg-magenta-l4 { background-color: rgb(96, 0, 96); }
+.bg-magenta-l5 { background-color: rgb(128, 0, 128); }
+.bg-magenta-l6 { background-color: rgb(160, 0, 160); }
+.bg-magenta-l7 { background-color: rgb(192, 0, 192); }
+.bg-magenta-l8 { background-color: rgb(224, 0, 224); }
+.bg-magenta-l9 { background-color: rgb(255, 0, 255); }
 
 
 /* yellow texts */
@@ -120,15 +120,15 @@
 .text-yellow-l9 { color: rgb(255, 255, 0); }
 
 /* yellow backgrounds */
-.bg-yellow-l1 { color: rgb(0, 0, 0); }
-.bg-yellow-l2 { color: rgb(32, 32, 0); }
-.bg-yellow-l3 { color: rgb(64, 64, 0); }
-.bg-yellow-l4 { color: rgb(96, 96, 0); }
-.bg-yellow-l5 { color: rgb(128, 128, 0); }
-.bg-yellow-l6 { color: rgb(160, 160, 0); }
-.bg-yellow-l7 { color: rgb(192, 192, 0); }
-.bg-yellow-l8 { color: rgb(224, 224, 0); }
-.bg-yellow-l9 { color: rgb(255, 255, 0); }
+.bg-yellow-l1 { background-color: rgb(0, 0, 0); }
+.bg-yellow-l2 { background-color: rgb(32, 32, 0); }
+.bg-yellow-l3 { background-color: rgb(64, 64, 0); }
+.bg-yellow-l4 { background-color: rgb(96, 96, 0); }
+.bg-yellow-l5 { background-color: rgb(128, 128, 0); }
+.bg-yellow-l6 { background-color: rgb(160, 160, 0); }
+.bg-yellow-l7 { background-color: rgb(192, 192, 0); }
+.bg-yellow-l8 { background-color: rgb(224, 224, 0); }
+.bg-yellow-l9 { background-color: rgb(255, 255, 0); }
 
 
 /* cyan texts */
@@ -143,15 +143,15 @@
 .text-cyan-l9 { color: rgb(0, 255, 255); }
 
 /* cyan backgrounds */
-.bg-cyan-l1 { color: rgb(0, 0, 0); }
-.bg-cyan-l2 { color: rgb(0, 32, 32); }
-.bg-cyan-l3 { color: rgb(0, 64, 64); }
-.bg-cyan-l4 { color: rgb(0, 96, 96); }
-.bg-cyan-l5 { color: rgb(0, 128, 128); }
-.bg-cyan-l6 { color: rgb(0, 160, 160); }
-.bg-cyan-l7 { color: rgb(0, 192, 192); }
-.bg-cyan-l8 { color: rgb(0, 224, 224); }
-.bg-cyan-l9 { color: rgb(0, 255, 255); }
+.bg-cyan-l1 { background-color: rgb(0, 0, 0); }
+.bg-cyan-l2 { background-color: rgb(0, 32, 32); }
+.bg-cyan-l3 { background-color: rgb(0, 64, 64); }
+.bg-cyan-l4 { background-color: rgb(0, 96, 96); }
+.bg-cyan-l5 { background-color: rgb(0, 128, 128); }
+.bg-cyan-l6 { background-color: rgb(0, 160, 160); }
+.bg-cyan-l7 { background-color: rgb(0, 192, 192); }
+.bg-cyan-l8 { background-color: rgb(0, 224, 224); }
+.bg-cyan-l9 { background-color: rgb(0, 255, 255); }
 
 
 /* light texts */
