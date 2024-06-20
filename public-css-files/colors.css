@@ -1,0 +1,200 @@
+/* 
+* Need colors for
+* Black
+* White
+* Red
+* Green
+* Blue
+* Magenta
+* Yellow
+* Cyan
+* 
+* Also make classes for dark and light
+*/
+
+/* text colors */
+.text-light { color: white; }
+.text-dark { color: black;}
+
+/* red texts */
+.text-red-l1 { color: rgb(0, 0, 0); }
+.text-red-l2 { color: rgb(32, 0, 0); }
+.text-red-l3 { color: rgb(64, 0, 0); }
+.text-red-l4 { color: rgb(96, 0, 0); }
+.text-red-l5 { color: rgb(128, 0, 0); }
+.text-red-l6 { color: rgb(160, 0, 0); }
+.text-red-l7 { color: rgb(192, 0, 0); }
+.text-red-l8 { color: rgb(224, 0, 0); }
+.text-red-l9 { color: rgb(255, 0, 0); }
+
+/* red backgrounds */
+.bg-red-l1 { background-color: rgb(0, 0, 0); }
+.bg-red-l2 { background-color: rgb(32, 0, 0); }
+.bg-red-l3 { background-color: rgb(64, 0, 0); }
+.bg-red-l4 { background-color: rgb(96, 0, 0); }
+.bg-red-l5 { background-color: rgb(128, 0, 0); }
+.bg-red-l6 { background-color: rgb(160, 0, 0); }
+.bg-red-l7 { background-color: rgb(192, 0, 0); }
+.bg-red-l8 { background-color: rgb(224, 0, 0); }
+.bg-red-l9 { background-color: rgb(255, 0, 0); }
+
+
+/* green texts */
+.text-green-l1 { color: rgb(0, 0, 0); }
+.text-green-l2 { color: rgb(0, 32, 0); }
+.text-green-l3 { color: rgb(0, 64, 0); }
+.text-green-l4 { color: rgb(0, 96, 0); }
+.text-green-l5 { color: rgb(0, 128, 0); }
+.text-green-l6 { color: rgb(0, 160, 0); }
+.text-green-l7 { color: rgb(0, 192, 0); }
+.text-green-l8 { color: rgb(0, 224, 0); }
+.text-green-l9 { color: rgb(0, 255, 0); }
+
+/* green backgrounds */
+.bg-green-l1 { background-color: rgb(0, 0, 0); }
+.bg-green-l2 { background-color: rgb(0, 32, 0); }
+.bg-green-l3 { background-color: rgb(0, 64, 0); }
+.bg-green-l4 { background-color: rgb(0, 96, 0); }
+.bg-green-l5 { background-color: rgb(0, 128, 0); }
+.bg-green-l6 { background-color: rgb(0, 160, 0); }
+.bg-green-l7 { background-color: rgb(0, 192, 0); }
+.bg-green-l8 { background-color: rgb(0, 224, 0); }
+.bg-green-l9 { background-color: rgb(0, 255, 0); }
+
+
+/* blue texts */
+.text-blue-l1 { color: rgb(0, 0, 0); }
+.text-blue-l2 { color: rgb(0, 0, 32); }
+.text-blue-l3 { color: rgb(0, 0, 64); }
+.text-blue-l4 { color: rgb(0, 0, 96); }
+.text-blue-l5 { color: rgb(0, 0, 128); }
+.text-blue-l6 { color: rgb(0, 0, 160); }
+.text-blue-l7 { color: rgb(0, 0, 192); }
+.text-blue-l8 { color: rgb(0, 0, 224); }
+.text-blue-l9 { color: rgb(0, 0, 255); }
+
+/* blue backgrounds */
+.bg-blue-l1 { background-color: rgb(0, 0, 0); }
+.bg-blue-l2 { background-color: rgb(0, 0, 32); }
+.bg-blue-l3 { background-color: rgb(0, 0, 64); }
+.bg-blue-l4 { background-color: rgb(0, 0, 96); }
+.bg-blue-l5 { background-color: rgb(0, 0, 128); }
+.bg-blue-l6 { background-color: rgb(0, 0, 160); }
+.bg-blue-l7 { background-color: rgb(0, 0, 192); }
+.bg-blue-l8 { background-color: rgb(0, 0, 224); }
+.bg-blue-l9 { background-color: rgb(0, 0, 255); }
+
+
+/* magenta texts */
+.text-magenta-l1 { color: rgb(0, 0, 0); }
+.text-magenta-l2 { color: rgb(32, 0, 32); }
+.text-magenta-l3 { color: rgb(64, 0, 64); }
+.text-magenta-l4 { color: rgb(96, 0, 96); }
+.text-magenta-l5 { color: rgb(128, 0, 128); }
+.text-magenta-l6 { color: rgb(160, 0, 160); }
+.text-magenta-l7 { color: rgb(192, 0, 192); }
+.text-magenta-l8 { color: rgb(224, 0, 224); }
+.text-magenta-l9 { color: rgb(255, 0, 255); }
+
+/* magenta backgrounds */
+.bg-magenta-l1 { color: rgb(0, 0, 0); }
+.bg-magenta-l2 { color: rgb(32, 0, 32); }
+.bg-magenta-l3 { color: rgb(64, 0, 64); }
+.bg-magenta-l4 { color: rgb(96, 0, 96); }
+.bg-magenta-l5 { color: rgb(128, 0, 128); }
+.bg-magenta-l6 { color: rgb(160, 0, 160); }
+.bg-magenta-l7 { color: rgb(192, 0, 192); }
+.bg-magenta-l8 { color: rgb(224, 0, 224); }
+.bg-magenta-l9 { color: rgb(255, 0, 255); }
+
+
+/* yellow texts */
+.text-yellow-l1 { color: rgb(0, 0, 0); }
+.text-yellow-l2 { color: rgb(32, 32, 0); }
+.text-yellow-l3 { color: rgb(64, 64, 0); }
+.text-yellow-l4 { color: rgb(96, 96, 0); }
+.text-yellow-l5 { color: rgb(128, 128, 0); }
+.text-yellow-l6 { color: rgb(160, 160, 0); }
+.text-yellow-l7 { color: rgb(192, 192, 0); }
+.text-yellow-l8 { color: rgb(224, 224, 0); }
+.text-yellow-l9 { color: rgb(255, 255, 0); }
+
+/* yellow backgrounds */
+.bg-yellow-l1 { color: rgb(0, 0, 0); }
+.bg-yellow-l2 { color: rgb(32, 32, 0); }
+.bg-yellow-l3 { color: rgb(64, 64, 0); }
+.bg-yellow-l4 { color: rgb(96, 96, 0); }
+.bg-yellow-l5 { color: rgb(128, 128, 0); }
+.bg-yellow-l6 { color: rgb(160, 160, 0); }
+.bg-yellow-l7 { color: rgb(192, 192, 0); }
+.bg-yellow-l8 { color: rgb(224, 224, 0); }
+.bg-yellow-l9 { color: rgb(255, 255, 0); }
+
+
+/* cyan texts */
+.text-cyan-l1 { color: rgb(0, 0, 0); }
+.text-cyan-l2 { color: rgb(0, 32, 32); }
+.text-cyan-l3 { color: rgb(0, 64, 64); }
+.text-cyan-l4 { color: rgb(0, 96, 96); }
+.text-cyan-l5 { color: rgb(0, 128, 128); }
+.text-cyan-l6 { color: rgb(0, 160, 160); }
+.text-cyan-l7 { color: rgb(0, 192, 192); }
+.text-cyan-l8 { color: rgb(0, 224, 224); }
+.text-cyan-l9 { color: rgb(0, 255, 255); }
+
+/* cyan backgrounds */
+.bg-cyan-l1 { color: rgb(0, 0, 0); }
+.bg-cyan-l2 { color: rgb(0, 32, 32); }
+.bg-cyan-l3 { color: rgb(0, 64, 64); }
+.bg-cyan-l4 { color: rgb(0, 96, 96); }
+.bg-cyan-l5 { color: rgb(0, 128, 128); }
+.bg-cyan-l6 { color: rgb(0, 160, 160); }
+.bg-cyan-l7 { color: rgb(0, 192, 192); }
+.bg-cyan-l8 { color: rgb(0, 224, 224); }
+.bg-cyan-l9 { color: rgb(0, 255, 255); }
+
+
+/* light texts */
+.text-light-l1 { color: rgb(128, 128, 128); }
+.text-light-l2 { color: rgb(144, 144, 144); }
+.text-light-l3 { color: rgb(160, 160, 160); }
+.text-light-l4 { color: rgb(176, 176, 176); }
+.text-light-l5 { color: rgb(192, 192, 192); }
+.text-light-l6 { color: rgb(208, 208, 208); }
+.text-light-l7 { color: rgb(224, 224, 224); }
+.text-light-l8 { color: rgb(240, 240, 240); }
+.text-light-l9 { color: rgb(255, 255, 255); }
+
+/* light backgrounds */
+.bg-light-l1 { background-color: rgb(128, 128, 128); }
+.bg-light-l2 { background-color: rgb(144, 144, 144); }
+.bg-light-l3 { background-color: rgb(160, 160, 160); }
+.bg-light-l4 { background-color: rgb(176, 176, 176); }
+.bg-light-l5 { background-color: rgb(192, 192, 192); }
+.bg-light-l6 { background-color: rgb(208, 208, 208); }
+.bg-light-l7 { background-color: rgb(224, 224, 224); }
+.bg-light-l8 { background-color: rgb(240, 240, 240); }
+.bg-light-l9 { background-color: rgb(255, 255, 255); }
+
+
+/* dark texts */
+.text-dark-l1 { color: rgb(128, 128, 128); }
+.text-dark-l2 { color: rgb(112, 112, 112); }
+.text-dark-l3 { color: rgb(96, 96, 96); }
+.text-dark-l4 { color: rgb(80, 80, 80); }
+.text-dark-l5 { color: rgb(64, 64, 64); }
+.text-dark-l6 { color: rgb(48, 48, 48); }
+.text-dark-l7 { color: rgb(32, 32, 32); }
+.text-dark-l8 { color: rgb(16, 16, 16); }
+.text-dark-l9 { color: rgb(0, 0, 0); }
+
+/* dark backgrounds */
+.bg-dark-l1 { background-color: rgb(128, 128, 128); }
+.bg-dark-l2 { background-color: rgb(112, 112, 112); }
+.bg-dark-l3 { background-color: rgb(96, 96, 96); }
+.bg-dark-l4 { background-color: rgb(80, 80, 80); }
+.bg-dark-l5 { background-color: rgb(64, 64, 64); }
+.bg-dark-l6 { background-color: rgb(48, 48, 48); }
+.bg-dark-l7 { background-color: rgb(32, 32, 32); }
+.bg-dark-l8 { background-color: rgb(16, 16, 16); }
+.bg-dark-l9 { background-color: rgb(0, 0, 0); }
