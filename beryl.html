@@ -1,25 +1,43 @@
+<!-- 
+CenterPoint?
+More like CenterPointless.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Beryl</title>
 
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/theme-toggle.css">
 
     <script src="/scripts/eye-saver.js"></script>
+
+    <!-- Some JavaScript for graphing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <style>
+        .centerpoint-graph {
+            background-color: white;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
+        <div class="vs"></div>
+
         <div>
 
             <!-- navbar -->
             <nav class="nav">
                 <a class="nav-link" href="/index.html">Home</a>
                 <a class="nav-link" href="/tools.html">Tools</a>
-                <a class="nav-link" href="/reviews.html">Reviews</a>
+                <a class="nav-link" href="/beryl.html">Beryl</a>
+                <!-- <a class="nav-link" href="/reviews.html">Reviews</a> -->
 
                 <div class="ms-auto-checkbox">
                     <input type="checkbox" class="checkbox" id="checkbox">
@@ -30,11 +48,289 @@
                     </label>
                 </div>
             </nav>
-        </div> 
+        </div>
+
+        <header>
+            <h1>Beryl</h1>
+            <p class="lead">
+                The scope of this webpage is to hold statistics and other information regarding Hurricane Beryl. As of now, this webpage only contains the statistics of CenterPoint's Outage Tracker
+            </p>
+
+            <hr>
+        </header>
+
+        <main>
+            <h2>CenterPoint Outage Tracker statistics</h2>
+            <p>
+                Statistics have begun on Wednesday, July 10, 2024. Apologies that there have not been further previous recordings.
+            </p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="centerpoint-graph">
+                        <canvas id="centerPointChart" style="width:100%; max-width:700px;"></canvas>
+                    </div>
+
+                    <p>
+                        Mandatory note: The astrisk value (*) states the current date. If the value for this date is small, it means that statistics are currently being recorded for the day. Please wait for further statistics.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <table class="table table-bordered" id="centerPointStats">
+                        <thead>
+                            <tr>
+                                <th>Date @ time</th>
+                                <th>Affected Customers</th>
+                                <th>Customers restored since Beryl</th>
+                            </tr>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td colspan="3">7/10/2024</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 10:16 am</td>
+                                <td>1,359,374</td>
+                                <td>N/A (Data unavailable at the time of recording*)</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 11:05 am</td>
+                                <td>1,362,972</td>
+                                <td>N/A</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 11:38 am</td>
+                                <td>1,359,978</td>
+                                <td>N/A (Data unavailable at the time of recording*)</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 12:53 pm</td>
+                                <td>1,350,107</td>
+                                <td>N/A (Data unavailable at the time of recording*)</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 1:24 pm</td>
+                                <td>1,340,227</td>
+                                <td>924,358</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 2:34 pm</td>
+                                <td>1,312,834</td>
+                                <td>951,751</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 3:14 pm</td>
+                                <td>1,314,491</td>
+                                <td>950,094</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 3:59 pm</td>
+                                <td>1,281,323</td>
+                                <td>983,262</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 4:29 pm</td>
+                                <td>1,278,732</td>
+                                <td>985,853</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/10/2024 @ 5:14 pm</td>
+                                <td>1,258,741</td>
+                                <td>1,005,844</td>
+                            </tr>
+        
+                            <tr>
+                                <td colspan="3">7/11/2024</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/11/2024 @ 9:54 am</td>
+                                <td>1,100,101</td>
+                                <td>1,164,484</td>
+                            </tr>
+        
+                            <tr>
+                                <td>7/11/2024 @ 11:04 am</td>
+                                <td>1,102,304</td>
+                                <td>1,162,281</td>
+                            </tr>
+
+                            <tr>
+                                <td>7/11/2024 @ 11:59 am</td>
+                                <td>1,092,301</td>
+                                <td>1,172,284</td>
+                            </tr>
+
+                            <tr>
+                                <td>7/11/2024 @ 12:14 pm</td>
+                                <td>1,096,938</td>
+                                <td>1,167,647</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <div id="putHere"></div>
     </div>
 
     <script src="./scripts/bootstrap.min.js"></script>
     <script src="./scripts/global.js"></script>
     <script src="./scripts/theme-toggle.js"></script>
+
+    <script>
+        var xValues = [
+            "7/10/2024 @ 10:16 am",
+            "7/10/2024 @ 11:05 am",
+            "7/10/2024 @ 11:38 am",
+            "7/10/2024 @ 12:53 pm",
+            "7/10/2024 @ 1:24 pm",
+            "7/10/2024 @ 2:34 pm",
+            "7/10/2024 @ 3:14 pm",
+            "7/10/2024 @ 3:59 pm",
+            "7/10/2024 @ 4:29 pm",
+            "7/10/2024 @ 5:14 pm",
+        ]
+
+        var yValues = [
+            1359374,
+            1362972,
+            1359978,
+            1350107,
+            1340227,
+            1312834,
+            1314491,
+            1281323,
+            1278732,
+            1258741,
+        ]
+
+        // new Chart("centerPointChart", {
+        //     type: "line",
+        //     data: {
+        //         labels: xValues,
+        //         datasets: [{
+        //             fill: false,
+        //             pointRadius: 1,
+        //             borderColor: "rgba(255, 0,0,0.5)",
+        //             data: yValues
+        //         }]
+        //     },
+        // });
+
+        function timeColor() {
+            var time = new Date().getTime();
+            var date = new Date;
+            date.setTime(time);
+
+            var seconds = date.getSeconds();
+            var minutes = date.getMinutes();
+            var hour = date.getHours();
+
+            console.log(minutes + (hour * 60));
+        }
+
+        timeColor();
+
+        
+
+        var xDays = [
+            "7/08/2024",
+            "7/09/2024",
+            "7/10/2024",
+            "7/11/2024*",
+        ]
+
+        var yPowerValues = [
+            298196,
+            341216,
+            264023,
+            11795,
+        ]
+
+        new Chart("centerPointChart", {
+            type: "bar",
+            data: {
+                labels: xDays,
+                datasets: [{
+                    label: 'Hover on bars for specific values',
+                    backgroundColor: "rgb(150, 0, 0)",
+                    data: yPowerValues
+                }]
+            },
+
+            options: {
+                legend: {display: true}
+            }
+        });
+
+
+
+
+
+        // function GetCellValues() {
+        //     var table = document.getElementById("centerPointStats");
+
+        //     var add_it = "";
+
+        //     for (var r = 0, n = table.rows.length; r < n; r++) {
+        //         for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
+        //             // alert(table.rows[r].cells[c].innerHTML);
+        //             add_it += table.rows[r].cells[c].innerHTML;
+        //             document.getElementById("putHere").innerHTML = add_it;
+        //         }
+        //     }
+
+        //     document.getElementById("putHere").innerHTML = add_it;
+        // }
+
+        
+
+
+        // var xyValues = [
+        //     {x:50, y:7},
+        //     {x:60, y:8},
+        //     {x:70, y:8},
+        //     {x:80, y:9},
+        //     {x:90, y:9},
+        //     {x:100, y:9},
+        //     {x:110, y:10},
+        //     {x:120, y:11},
+        //     {x:130, y:14},
+        //     {x:140, y:14},
+        //     {x:150, y:15}
+        // ];
+
+        // new Chart("centerPointChart", {
+        //     type: "scatter",
+        //     data: {
+        //         datasets: [{
+        //             pointRadius: 4,
+        //             pointBackgroundColor: "rgb(0, 0, 255)",
+        //             data: xyValues
+        //         }]
+        //     },
+        //     options: {
+        //         legend: {display: false},
+        //         scales: {
+        //             xAxes: [{tick: {min: 40, max:160}}],
+        //             yAxes: [{ticks: {min: 6, max:16}}],
+        //         }
+        //     }
+        // });
+    </script>
 </body>
 </html>
