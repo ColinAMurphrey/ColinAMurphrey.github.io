@@ -8,12 +8,12 @@
     <title>Colin's Home</title>
 
     
-    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/theme-toggle.css">
-    <!-- <link rel="stylesheet" href="/scripts/eye-saver.js"> -->
+    <link rel="stylesheet" href="./styles/theme-toggle.css"> -->
 
     <script src="/scripts/eye-saver.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 
@@ -21,16 +21,9 @@
     <div class="container">
         <div class="center-it">
             <h1>Colin Murphrey</h1>
-            <nav>
-                <ul>
-                    <!-- <li><a href="#">Articles</a></li> -->
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="about-me.html">About me</a></li>
-                    <li><a href="https://blogs.terracontents.com" target="_blank">Blogs</a></li>
-                    <!-- <li><a href="beryl.html">Beryl</a></li> -->
-                    <!-- <li><a href="reviews.html">Reviews</a></li> -->
-                </ul>
-            </nav>
+
+            <!-- navbar is managed by  -->
+            <div id="navigation"></div>
             
         </div>
 
@@ -50,5 +43,9 @@
     <script src="./scripts/bootstrap.min.js"></script>
     <script src="./scripts/global.js"></script>
     <script src="./scripts/theme-toggle.js"></script>
+
+    <!-- navbar and automated CSS -->
+    <script src="/scripts/index-navigation.js"></script>
+    <script src="/scripts/import-css.js"></script>
 </body>
 </html>

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/styles/theme-toggle.css">
 
     <script src="/scripts/eye-saver.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <style>
         form { margin-bottom: 20px; }
         .container { text-align: center; }
@@ -24,10 +26,9 @@
     <div class="container">
         <header>
             <!-- navbar -->
-            <nav class="nav">
+            <!-- <nav class="nav">
                 <a class="nav-link" href="/index.html">Home</a>
                 <a class="nav-link" href="/tools.html">Tools</a>
-                <!-- <a class="nav-link" href="/reviews.html">Reviews</a> -->
     
                 <div class="ms-auto-checkbox">
                     <input type="checkbox" class="checkbox" id="checkbox">
@@ -37,7 +38,9 @@
                         <span class="ball"></span>
                     </label>
                 </div>
-            </nav>
+            </nav> -->
+
+            <div id="navigation"></div>
         </header>
 
         <main>
@@ -96,5 +99,9 @@
     <script src="/scripts/bootstrap.min.js"></script>
     <script src="/scripts/global.js"></script>
     <script src="/scripts/theme-toggle.js"></script>
+
+    <!-- navbar and automated CSS -->
+    <script src="/scripts/subpage-navigation.js"></script>
+    <script src="/script/import-css"></script>
 </body>
 </html>
